@@ -11,6 +11,7 @@ option(GPUVISION_BUILD_TESTS "Build GPUVision tests" ON)
 add_library(gpuvision_core
     src/benchmark.cpp
     src/engine.cpp
+    src/json_export.cpp
     src/metrics.cpp
     src/scheduler.cpp
     src/sm.cpp
@@ -50,6 +51,7 @@ if(GPUVISION_BUILD_TESTS)
     add_executable(gpuvision_tests
         tests/benchmark_tests.cpp
         tests/engine_tests.cpp
+        tests/json_export_tests.cpp
         tests/scheduler_tests.cpp
         tests/workload_tests.cpp
     )

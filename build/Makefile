@@ -310,6 +310,30 @@ src/engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/engine.cpp.s
 .PHONY : src/engine.cpp.s
 
+src/json_export.o: src/json_export.cpp.o
+.PHONY : src/json_export.o
+
+# target to build an object file
+src/json_export.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o
+.PHONY : src/json_export.cpp.o
+
+src/json_export.i: src/json_export.cpp.i
+.PHONY : src/json_export.i
+
+# target to preprocess a source file
+src/json_export.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/json_export.cpp.i
+.PHONY : src/json_export.cpp.i
+
+src/json_export.s: src/json_export.cpp.s
+.PHONY : src/json_export.s
+
+# target to generate assembly for a file
+src/json_export.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/json_export.cpp.s
+.PHONY : src/json_export.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -502,6 +526,30 @@ tests/engine_tests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.s
 .PHONY : tests/engine_tests.cpp.s
 
+tests/json_export_tests.o: tests/json_export_tests.cpp.o
+.PHONY : tests/json_export_tests.o
+
+# target to build an object file
+tests/json_export_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/json_export_tests.cpp.o
+.PHONY : tests/json_export_tests.cpp.o
+
+tests/json_export_tests.i: tests/json_export_tests.cpp.i
+.PHONY : tests/json_export_tests.i
+
+# target to preprocess a source file
+tests/json_export_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/json_export_tests.cpp.i
+.PHONY : tests/json_export_tests.cpp.i
+
+tests/json_export_tests.s: tests/json_export_tests.cpp.s
+.PHONY : tests/json_export_tests.s
+
+# target to generate assembly for a file
+tests/json_export_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/json_export_tests.cpp.s
+.PHONY : tests/json_export_tests.cpp.s
+
 tests/scheduler_tests.o: tests/scheduler_tests.cpp.o
 .PHONY : tests/scheduler_tests.o
 
@@ -576,6 +624,9 @@ help:
 	@echo "... src/engine.o"
 	@echo "... src/engine.i"
 	@echo "... src/engine.s"
+	@echo "... src/json_export.o"
+	@echo "... src/json_export.i"
+	@echo "... src/json_export.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -600,6 +651,9 @@ help:
 	@echo "... tests/engine_tests.o"
 	@echo "... tests/engine_tests.i"
 	@echo "... tests/engine_tests.s"
+	@echo "... tests/json_export_tests.o"
+	@echo "... tests/json_export_tests.i"
+	@echo "... tests/json_export_tests.s"
 	@echo "... tests/scheduler_tests.o"
 	@echo "... tests/scheduler_tests.i"
 	@echo "... tests/scheduler_tests.s"

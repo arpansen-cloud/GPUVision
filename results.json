@@ -1,0 +1,64 @@
+{
+  "mode": "benchmark",
+  "workload": {
+    "warps": 64,
+    "instructions_per_warp": 50,
+    "memory_probability": 0.25,
+    "memory_latency": 20,
+    "sms": 4,
+    "seed": 42
+  },
+  "results": [
+    {
+      "scheduler": "Round Robin",
+      "metrics":       {
+        "total_cycles": 847,
+        "instructions_completed": 3200,
+        "ipc": 3.778040,
+        "sm_utilization": 94.451004,
+        "idle_cycles": 188,
+        "memory_stalls": 784,
+        "completed_warps": 64,
+        "average_warp_completion_time": 767.281250,
+        "max_warp_completion_time": 847,
+        "min_warp_completion_time": 663,
+        "total_sm_cycles": 3388,
+        "non_idle_sm_cycles": 3200
+      }
+    },
+    {
+      "scheduler": "Oldest First",
+      "metrics":       {
+        "total_cycles": 998,
+        "instructions_completed": 3200,
+        "ipc": 3.206413,
+        "sm_utilization": 80.160321,
+        "idle_cycles": 792,
+        "memory_stalls": 784,
+        "completed_warps": 64,
+        "average_warp_completion_time": 558.781250,
+        "max_warp_completion_time": 998,
+        "min_warp_completion_time": 167,
+        "total_sm_cycles": 3992,
+        "non_idle_sm_cycles": 3200
+      }
+    },
+    {
+      "scheduler": "Greedy Then Oldest",
+      "metrics":       {
+        "total_cycles": 975,
+        "instructions_completed": 3200,
+        "ipc": 3.282051,
+        "sm_utilization": 82.051282,
+        "idle_cycles": 700,
+        "memory_stalls": 784,
+        "completed_warps": 64,
+        "average_warp_completion_time": 558.828125,
+        "max_warp_completion_time": 975,
+        "min_warp_completion_time": 175,
+        "total_sm_cycles": 3900,
+        "non_idle_sm_cycles": 3200
+      }
+    }
+  ]
+}

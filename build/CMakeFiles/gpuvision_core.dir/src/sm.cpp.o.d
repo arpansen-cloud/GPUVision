@@ -790,5 +790,8 @@ CMakeFiles/gpuvision_core.dir/src/sm.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/include/metrics.h \
+  /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/include/json_export.h \
+  /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/include/benchmark.h \
   /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/include/scheduler.h \
-  /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/include/warp.h
+  /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/include/warp.h \
+  /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/include/workload.h

@@ -1,5 +1,5 @@
 {
-  "tests": 14,
+  "tests": 22,
   "name": "AllTests",
   "testsuites": [
     {
@@ -56,6 +56,52 @@
           "name": "SmUtilizationStaysBetweenZeroAndOneHundred",
           "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/engine_tests.cpp",
           "line": 81
+        }
+      ]
+    },
+    {
+      "name": "JsonExportTests",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "DemoJsonOutputContainsRequiredFields",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/json_export_tests.cpp",
+          "line": 65
+        },
+        {
+          "name": "BenchmarkJsonOutputContainsAllSchedulers",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/json_export_tests.cpp",
+          "line": 77
+        },
+        {
+          "name": "JsonExportFileIsCreated",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/json_export_tests.cpp",
+          "line": 88
+        },
+        {
+          "name": "TimelineContainsCycleNumbers",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/json_export_tests.cpp",
+          "line": 104
+        },
+        {
+          "name": "SmEventsIncludeSmId",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/json_export_tests.cpp",
+          "line": 110
+        },
+        {
+          "name": "JsonModeDoesNotBreakBenchmarkBehavior",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/json_export_tests.cpp",
+          "line": 116
+        },
+        {
+          "name": "BenchmarkJsonIsDeterministicForSameSeed",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/json_export_tests.cpp",
+          "line": 128
+        },
+        {
+          "name": "CsvExportStillWorksAfterJsonChanges",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/json_export_tests.cpp",
+          "line": 139
         }
       ]
     },

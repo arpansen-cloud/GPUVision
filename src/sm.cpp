@@ -15,8 +15,16 @@ int SM::id() const {
 bool SM::issue_cycle(std::vector<Warp>& warps,
                      int memory_latency,
                      Metrics& metrics,
-                     std::ostream* log) {
+                     std::ostream* log,
+                     SmEvent* event) {
     ++metrics.total_sm_cycles;
+    if (event != nullptr) {
+        event->sm_id = id_;
+        event->warp_id = -1;
+        event->instruction = "IDLE";
+        event->resulting_state = "IDLE";
+        event->idle = true;
+    }
 
     const int warp_index = scheduler_->select_warp(warps);
     if (warp_index < 0) {
@@ -39,6 +47,14 @@ bool SM::issue_cycle(std::vector<Warp>& warps,
 
     if (memory_instruction) {
         ++metrics.memory_stall_count;
+    }
+
+    if (event != nullptr) {
+        event->sm_id = id_;
+        event->warp_id = warp.id();
+        event->instruction = memory_instruction ? "MEMORY" : "COMPUTE";
+        event->resulting_state = to_string(warp.state());
+        event->idle = false;
     }
 
     if (log != nullptr) {

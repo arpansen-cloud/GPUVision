@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gpuvision_core.dir/src/benchmark.cpp.o.d"
   "CMakeFiles/gpuvision_core.dir/src/engine.cpp.o"
   "CMakeFiles/gpuvision_core.dir/src/engine.cpp.o.d"
+  "CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o"
+  "CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o.d"
   "CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o"
   "CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o.d"
   "CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o"

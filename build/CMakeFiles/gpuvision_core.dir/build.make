@@ -100,10 +100,24 @@ CMakeFiles/gpuvision_core.dir/src/engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpuvision_core.dir/src/engine.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/src/engine.cpp" -o CMakeFiles/gpuvision_core.dir/src/engine.cpp.s
 
+CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o: CMakeFiles/gpuvision_core.dir/flags.make
+CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/src/json_export.cpp
+CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o: CMakeFiles/gpuvision_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o -MF CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o.d -o CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/src/json_export.cpp"
+
+CMakeFiles/gpuvision_core.dir/src/json_export.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gpuvision_core.dir/src/json_export.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/src/json_export.cpp" > CMakeFiles/gpuvision_core.dir/src/json_export.cpp.i
+
+CMakeFiles/gpuvision_core.dir/src/json_export.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpuvision_core.dir/src/json_export.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/src/json_export.cpp" -o CMakeFiles/gpuvision_core.dir/src/json_export.cpp.s
+
 CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o: CMakeFiles/gpuvision_core.dir/flags.make
 CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/src/metrics.cpp
 CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o: CMakeFiles/gpuvision_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o -MF CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o.d -o CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/src/metrics.cpp"
 
 CMakeFiles/gpuvision_core.dir/src/metrics.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/gpuvision_core.dir/src/metrics.cpp.s: cmake_force
 CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o: CMakeFiles/gpuvision_core.dir/flags.make
 CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/src/scheduler.cpp
 CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o: CMakeFiles/gpuvision_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o -MF CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o.d -o CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/src/scheduler.cpp"
 
 CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.s: cmake_force
 CMakeFiles/gpuvision_core.dir/src/sm.cpp.o: CMakeFiles/gpuvision_core.dir/flags.make
 CMakeFiles/gpuvision_core.dir/src/sm.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/src/sm.cpp
 CMakeFiles/gpuvision_core.dir/src/sm.cpp.o: CMakeFiles/gpuvision_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gpuvision_core.dir/src/sm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gpuvision_core.dir/src/sm.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_core.dir/src/sm.cpp.o -MF CMakeFiles/gpuvision_core.dir/src/sm.cpp.o.d -o CMakeFiles/gpuvision_core.dir/src/sm.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/src/sm.cpp"
 
 CMakeFiles/gpuvision_core.dir/src/sm.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/gpuvision_core.dir/src/sm.cpp.s: cmake_force
 CMakeFiles/gpuvision_core.dir/src/workload.cpp.o: CMakeFiles/gpuvision_core.dir/flags.make
 CMakeFiles/gpuvision_core.dir/src/workload.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/src/workload.cpp
 CMakeFiles/gpuvision_core.dir/src/workload.cpp.o: CMakeFiles/gpuvision_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gpuvision_core.dir/src/workload.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gpuvision_core.dir/src/workload.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_core.dir/src/workload.cpp.o -MF CMakeFiles/gpuvision_core.dir/src/workload.cpp.o.d -o CMakeFiles/gpuvision_core.dir/src/workload.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/src/workload.cpp"
 
 CMakeFiles/gpuvision_core.dir/src/workload.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/gpuvision_core.dir/src/workload.cpp.s: cmake_force
 CMakeFiles/gpuvision_core.dir/src/warp.cpp.o: CMakeFiles/gpuvision_core.dir/flags.make
 CMakeFiles/gpuvision_core.dir/src/warp.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/src/warp.cpp
 CMakeFiles/gpuvision_core.dir/src/warp.cpp.o: CMakeFiles/gpuvision_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gpuvision_core.dir/src/warp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gpuvision_core.dir/src/warp.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_core.dir/src/warp.cpp.o -MF CMakeFiles/gpuvision_core.dir/src/warp.cpp.o.d -o CMakeFiles/gpuvision_core.dir/src/warp.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/src/warp.cpp"
 
 CMakeFiles/gpuvision_core.dir/src/warp.cpp.i: cmake_force
@@ -174,6 +188,7 @@ CMakeFiles/gpuvision_core.dir/src/warp.cpp.s: cmake_force
 gpuvision_core_OBJECTS = \
 "CMakeFiles/gpuvision_core.dir/src/benchmark.cpp.o" \
 "CMakeFiles/gpuvision_core.dir/src/engine.cpp.o" \
+"CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o" \
 "CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o" \
 "CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o" \
 "CMakeFiles/gpuvision_core.dir/src/sm.cpp.o" \
@@ -185,6 +200,7 @@ gpuvision_core_EXTERNAL_OBJECTS =
 
 libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/src/benchmark.cpp.o
 libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/src/engine.cpp.o
+libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/src/json_export.cpp.o
 libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o
 libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o
 libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/src/sm.cpp.o
@@ -192,7 +208,7 @@ libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/src/workload.cpp.o
 libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/src/warp.cpp.o
 libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/build.make
 libgpuvision_core.a: CMakeFiles/gpuvision_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libgpuvision_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libgpuvision_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gpuvision_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpuvision_core.dir/link.txt --verbose=$(VERBOSE)
 

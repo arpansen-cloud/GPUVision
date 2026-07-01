@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <cstdint>
 #include <exception>
 #include <iostream>
@@ -7,6 +8,7 @@
 
 #include "benchmark.h"
 #include "engine.h"
+#include "json_export.h"
 #include "warp.h"
 
 namespace {
@@ -35,10 +37,11 @@ std::vector<gpuvision::Warp> create_demo_warps() {
 void print_usage(std::ostream& os) {
     os << "GPUVision\n";
     os << "Usage:\n";
-    os << "  gpuvision --demo\n";
+    os << "  gpuvision --demo [--json] [--export demo.json]\n";
     os << "  gpuvision --benchmark --warps 64 --instructions 50 "
-          "--memory-probability 0.25 --memory-latency 20 --sms 4 --seed 42\n";
+          "--memory-probability 0.25 --memory-latency 20 --sms 4 --seed 42 [--json]\n";
     os << "  gpuvision --benchmark --export results.csv\n";
+    os << "  gpuvision --benchmark --json --export results.json\n";
 }
 
 std::string require_value(int& index, int argc, char* argv[]) {
@@ -62,24 +65,65 @@ std::uint32_t parse_seed_option(int& index, int argc, char* argv[]) {
     return static_cast<std::uint32_t>(seed);
 }
 
-int run_demo() {
+int max_instructions_per_warp(const std::vector<gpuvision::Warp>& warps) {
+    std::size_t max_count = 0;
+    for (const gpuvision::Warp& warp : warps) {
+        max_count = std::max(max_count, warp.instruction_count());
+    }
+    return static_cast<int>(max_count);
+}
+
+int run_demo(bool json_mode, const std::string& export_path) {
+    const std::vector<gpuvision::Warp> demo_warps = create_demo_warps();
     const gpuvision::EngineConfig config{
         2,
         4,
         gpuvision::SchedulerType::ROUND_ROBIN,
-        true
+        !json_mode,
+        json_mode
     };
 
-    gpuvision::Engine engine(config, create_demo_warps());
-    const gpuvision::Metrics& metrics = engine.run(&std::cout);
+    gpuvision::Engine engine(config, demo_warps);
+    const gpuvision::Metrics& metrics = engine.run(json_mode ? nullptr : &std::cout);
+
+    if (json_mode) {
+        gpuvision::SimulationRunResult result;
+        result.mode = "demo";
+        result.scheduler = gpuvision::scheduler_type_name(config.scheduler_type);
+        result.sms = config.sm_count;
+        result.warps = static_cast<int>(demo_warps.size());
+        result.instructions_per_warp = max_instructions_per_warp(demo_warps);
+        result.memory_latency = config.memory_latency;
+        result.metrics = metrics;
+        result.timeline = engine.timeline();
+
+        const std::string json = gpuvision::simulation_run_to_json(result);
+        if (!export_path.empty()) {
+            gpuvision::write_json_file(export_path, json);
+        } else {
+            std::cout << json;
+        }
+        return 0;
+    }
 
     std::cout << '\n' << metrics;
     return 0;
 }
 
 int run_benchmark_mode(const gpuvision::BenchmarkConfig& config,
-                       const std::string& export_path) {
+                       const std::string& export_path,
+                       bool json_mode) {
     const std::vector<gpuvision::BenchmarkResult> results = gpuvision::run_benchmark(config);
+    if (json_mode) {
+        const std::string json = gpuvision::benchmark_to_json(config, results);
+        if (!export_path.empty()) {
+            gpuvision::write_json_file(export_path, json);
+        } else {
+            std::cout << json;
+        }
+        return 0;
+    }
+
     gpuvision::print_benchmark_results(config, results, std::cout);
 
     if (!export_path.empty()) {
@@ -96,6 +140,7 @@ int main(int argc, char* argv[]) {
     try {
         bool benchmark_mode = false;
         bool demo_mode = argc == 1;
+        bool json_mode = false;
         std::string export_path;
 
         gpuvision::BenchmarkConfig benchmark_config;
@@ -120,6 +165,10 @@ int main(int argc, char* argv[]) {
             if (arg == "--benchmark") {
                 benchmark_mode = true;
                 demo_mode = false;
+                continue;
+            }
+            if (arg == "--json") {
+                json_mode = true;
                 continue;
             }
             if (arg == "--warps") {
@@ -156,10 +205,10 @@ int main(int argc, char* argv[]) {
         }
 
         if (benchmark_mode) {
-            return run_benchmark_mode(benchmark_config, export_path);
+            return run_benchmark_mode(benchmark_config, export_path, json_mode);
         }
         if (demo_mode) {
-            return run_demo();
+            return run_demo(json_mode, export_path);
         }
 
         print_usage(std::cerr);

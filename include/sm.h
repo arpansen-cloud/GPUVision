@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "metrics.h"
+#include "json_export.h"
 #include "scheduler.h"
 #include "warp.h"
 
@@ -21,7 +22,8 @@ public:
     bool issue_cycle(std::vector<Warp>& warps,
                      int memory_latency,
                      Metrics& metrics,
-                     std::ostream* log);
+                     std::ostream* log,
+                     SmEvent* event = nullptr);
 
 private:
     int id_;
