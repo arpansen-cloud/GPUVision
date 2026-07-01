@@ -1,2 +1,2 @@
-/usr/bin/ar qc libgpuvision_core.a CMakeFiles/gpuvision_core.dir/src/engine.cpp.o CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o CMakeFiles/gpuvision_core.dir/src/sm.cpp.o CMakeFiles/gpuvision_core.dir/src/warp.cpp.o
+/usr/bin/ar qc libgpuvision_core.a CMakeFiles/gpuvision_core.dir/src/benchmark.cpp.o CMakeFiles/gpuvision_core.dir/src/engine.cpp.o CMakeFiles/gpuvision_core.dir/src/metrics.cpp.o CMakeFiles/gpuvision_core.dir/src/scheduler.cpp.o CMakeFiles/gpuvision_core.dir/src/sm.cpp.o CMakeFiles/gpuvision_core.dir/src/workload.cpp.o CMakeFiles/gpuvision_core.dir/src/warp.cpp.o
 /usr/bin/ranlib libgpuvision_core.a

@@ -1,6 +1,7 @@
 #include "engine.h"
 
 #include <algorithm>
+#include <limits>
 #include <ostream>
 #include <stdexcept>
 #include <utility>
@@ -20,6 +21,8 @@ Engine::Engine(EngineConfig config, std::vector<Warp> warps)
     for (int id = 0; id < config_.sm_count; ++id) {
         sms_.emplace_back(id, create_scheduler(config_.scheduler_type));
     }
+    warp_completion_times_.assign(warps_.size(), -1);
+    record_newly_completed_warps(0);
     update_completed_warps_metric();
 }
 
@@ -41,6 +44,7 @@ const Metrics& Engine::run(std::ostream* log) {
         }
 
         ++metrics_.total_cycles;
+        record_newly_completed_warps(metrics_.total_cycles);
         update_completed_warps_metric();
     }
 
@@ -75,6 +79,43 @@ void Engine::tick_stalled_warps(std::ostream* log) {
 void Engine::update_completed_warps_metric() {
     metrics_.completed_warps = static_cast<int>(std::count_if(
         warps_.begin(), warps_.end(), [](const Warp& warp) { return warp.is_completed(); }));
+    update_completion_time_metrics();
+}
+
+void Engine::record_newly_completed_warps(int completion_cycle) {
+    for (std::size_t i = 0; i < warps_.size(); ++i) {
+        if (warps_[i].is_completed() && warp_completion_times_[i] < 0) {
+            warp_completion_times_[i] = completion_cycle;
+        }
+    }
+}
+
+void Engine::update_completion_time_metrics() {
+    int count = 0;
+    int sum = 0;
+    int min_time = std::numeric_limits<int>::max();
+    int max_time = 0;
+
+    for (int completion_time : warp_completion_times_) {
+        if (completion_time < 0) {
+            continue;
+        }
+        ++count;
+        sum += completion_time;
+        min_time = std::min(min_time, completion_time);
+        max_time = std::max(max_time, completion_time);
+    }
+
+    if (count == 0) {
+        metrics_.average_warp_completion_time = 0.0;
+        metrics_.min_warp_completion_time = 0;
+        metrics_.max_warp_completion_time = 0;
+        return;
+    }
+
+    metrics_.average_warp_completion_time = static_cast<double>(sum) / static_cast<double>(count);
+    metrics_.min_warp_completion_time = min_time;
+    metrics_.max_warp_completion_time = max_time;
 }
 
 } // namespace gpuvision

@@ -9,10 +9,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 option(GPUVISION_BUILD_TESTS "Build GPUVision tests" ON)
 
 add_library(gpuvision_core
+    src/benchmark.cpp
     src/engine.cpp
     src/metrics.cpp
     src/scheduler.cpp
     src/sm.cpp
+    src/workload.cpp
     src/warp.cpp
 )
 
@@ -38,6 +40,7 @@ if(GPUVISION_BUILD_TESTS)
     FetchContent_Declare(
         googletest
         URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+        DOWNLOAD_EXTRACT_TIMESTAMP TRUE
     )
     set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
     FetchContent_MakeAvailable(googletest)
@@ -45,8 +48,10 @@ if(GPUVISION_BUILD_TESTS)
     enable_testing()
 
     add_executable(gpuvision_tests
+        tests/benchmark_tests.cpp
         tests/engine_tests.cpp
         tests/scheduler_tests.cpp
+        tests/workload_tests.cpp
     )
     target_link_libraries(gpuvision_tests PRIVATE gpuvision_core GTest::gtest_main)
 

@@ -1,8 +1,15 @@
-EngineTests.MemoryInstructionsCauseCorrectStallDuration 1 0.00752571
-EngineTests.SimulationCompletesAllWarps 1 0.00416987
-EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions 1 0.00494496
-EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred 1 0.00414179
-SchedulerTests.RoundRobinOrder 1 0.00466167
-SchedulerTests.StalledWarpsNotScheduled 1 0.00397687
-SchedulerTests.CompletedWarpsNotScheduled 1 0.0044245
+EngineTests.MemoryInstructionsCauseCorrectStallDuration 5 0.000999183
+EngineTests.SimulationCompletesAllWarps 5 0.000900992
+EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions 5 0.000918792
+EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred 5 0.0009563
+SchedulerTests.RoundRobinOrder 5 0.000893725
+SchedulerTests.StalledWarpsNotScheduled 5 0.000924325
+SchedulerTests.CompletedWarpsNotScheduled 5 0.000890092
+BenchmarkTests.BenchmarkRunsAllSchedulers 4 0.00281609
+BenchmarkTests.CsvExportCreatesExpectedHeaders 4 0.00141235
+BenchmarkTests.AverageWarpCompletionTimeIsNonNegative 4 0.00124499
+BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred 4 0.00141033
+BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns 4 0.00127854
+WorkloadTests.SameSeedProducesSameWorkload 4 0.00114285
+WorkloadTests.DifferentSeedsProduceDifferentWorkloads 4 0.00107991
 ---

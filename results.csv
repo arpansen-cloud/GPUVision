@@ -1,0 +1,4 @@
+scheduler,total_cycles,instructions_completed,ipc,sm_utilization,idle_cycles,memory_stalls,completed_warps,average_warp_completion_time
+Round Robin,847,3200,3.778040,94.451004,188,784,64,767.281250
+Oldest First,998,3200,3.206413,80.160321,792,784,64,558.781250
+Greedy Then Oldest,975,3200,3.282051,82.051282,700,784,64,558.828125

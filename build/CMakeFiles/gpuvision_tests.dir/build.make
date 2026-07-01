@@ -72,10 +72,24 @@ include CMakeFiles/gpuvision_tests.dir/flags.make
 CMakeFiles/gpuvision_tests.dir/codegen:
 .PHONY : CMakeFiles/gpuvision_tests.dir/codegen
 
+CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o: CMakeFiles/gpuvision_tests.dir/flags.make
+CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/tests/benchmark_tests.cpp
+CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o: CMakeFiles/gpuvision_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o -MF CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o.d -o CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/tests/benchmark_tests.cpp"
+
+CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/tests/benchmark_tests.cpp" > CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.i
+
+CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/tests/benchmark_tests.cpp" -o CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.s
+
 CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o: CMakeFiles/gpuvision_tests.dir/flags.make
 CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/tests/engine_tests.cpp
 CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o: CMakeFiles/gpuvision_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o -MF CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o.d -o CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/tests/engine_tests.cpp"
 
 CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.s: cmake_force
 CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o: CMakeFiles/gpuvision_tests.dir/flags.make
 CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/tests/scheduler_tests.cpp
 CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o: CMakeFiles/gpuvision_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o -MF CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o.d -o CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/tests/scheduler_tests.cpp"
 
 CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.i: cmake_force
@@ -100,22 +114,40 @@ CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/tests/scheduler_tests.cpp" -o CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.s
 
+CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o: CMakeFiles/gpuvision_tests.dir/flags.make
+CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o: /Users/arpansen/Documents/GPU\ Scheduling\ Simulator/untitled/GPUVision/tests/workload_tests.cpp
+CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o: CMakeFiles/gpuvision_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o -MF CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o.d -o CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o -c "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/tests/workload_tests.cpp"
+
+CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/tests/workload_tests.cpp" > CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.i
+
+CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/tests/workload_tests.cpp" -o CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.s
+
 # Object files for target gpuvision_tests
 gpuvision_tests_OBJECTS = \
+"CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o" \
 "CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o" \
-"CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o"
+"CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o" \
+"CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o"
 
 # External object files for target gpuvision_tests
 gpuvision_tests_EXTERNAL_OBJECTS =
 
+gpuvision_tests: CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o
 gpuvision_tests: CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o
 gpuvision_tests: CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o
+gpuvision_tests: CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o
 gpuvision_tests: CMakeFiles/gpuvision_tests.dir/build.make
 gpuvision_tests: libgpuvision_core.a
 gpuvision_tests: lib/libgtest_main.a
 gpuvision_tests: lib/libgtest.a
 gpuvision_tests: CMakeFiles/gpuvision_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable gpuvision_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable gpuvision_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpuvision_tests.dir/link.txt --verbose=$(VERBOSE)
 	/opt/homebrew/bin/cmake -D TEST_TARGET=gpuvision_tests -D "TEST_EXECUTABLE=/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=gpuvision_tests_TESTS -D "CTEST_FILE=/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /opt/homebrew/share/cmake/Modules/GoogleTestAddTests.cmake
 

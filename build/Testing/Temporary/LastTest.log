@@ -1,10 +1,145 @@
-Start testing: Jul 01 15:25 EDT
+Start testing: Jul 01 15:44 EDT
 ----------------------------------------------------------
-1/7 Testing: EngineTests.MemoryInstructionsCauseCorrectStallDuration
-1/7 Test: EngineTests.MemoryInstructionsCauseCorrectStallDuration
+1/14 Testing: BenchmarkTests.BenchmarkRunsAllSchedulers
+1/14 Test: BenchmarkTests.BenchmarkRunsAllSchedulers
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=BenchmarkTests.BenchmarkRunsAllSchedulers" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"BenchmarkTests.BenchmarkRunsAllSchedulers" start time: Jul 01 15:44 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BenchmarkTests.BenchmarkRunsAllSchedulers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BenchmarkTests
+[ RUN      ] BenchmarkTests.BenchmarkRunsAllSchedulers
+[       OK ] BenchmarkTests.BenchmarkRunsAllSchedulers (0 ms)
+[----------] 1 test from BenchmarkTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BenchmarkTests.BenchmarkRunsAllSchedulers" end time: Jul 01 15:44 EDT
+"BenchmarkTests.BenchmarkRunsAllSchedulers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/14 Testing: BenchmarkTests.CsvExportCreatesExpectedHeaders
+2/14 Test: BenchmarkTests.CsvExportCreatesExpectedHeaders
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=BenchmarkTests.CsvExportCreatesExpectedHeaders" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"BenchmarkTests.CsvExportCreatesExpectedHeaders" start time: Jul 01 15:44 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BenchmarkTests.CsvExportCreatesExpectedHeaders
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BenchmarkTests
+[ RUN      ] BenchmarkTests.CsvExportCreatesExpectedHeaders
+[       OK ] BenchmarkTests.CsvExportCreatesExpectedHeaders (0 ms)
+[----------] 1 test from BenchmarkTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BenchmarkTests.CsvExportCreatesExpectedHeaders" end time: Jul 01 15:44 EDT
+"BenchmarkTests.CsvExportCreatesExpectedHeaders" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/14 Testing: BenchmarkTests.AverageWarpCompletionTimeIsNonNegative
+3/14 Test: BenchmarkTests.AverageWarpCompletionTimeIsNonNegative
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=BenchmarkTests.AverageWarpCompletionTimeIsNonNegative" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"BenchmarkTests.AverageWarpCompletionTimeIsNonNegative" start time: Jul 01 15:44 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BenchmarkTests.AverageWarpCompletionTimeIsNonNegative
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BenchmarkTests
+[ RUN      ] BenchmarkTests.AverageWarpCompletionTimeIsNonNegative
+[       OK ] BenchmarkTests.AverageWarpCompletionTimeIsNonNegative (0 ms)
+[----------] 1 test from BenchmarkTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BenchmarkTests.AverageWarpCompletionTimeIsNonNegative" end time: Jul 01 15:44 EDT
+"BenchmarkTests.AverageWarpCompletionTimeIsNonNegative" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/14 Testing: BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred
+4/14 Test: BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred" start time: Jul 01 15:44 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BenchmarkTests
+[ RUN      ] BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred
+[       OK ] BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred (0 ms)
+[----------] 1 test from BenchmarkTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred" end time: Jul 01 15:44 EDT
+"BenchmarkTests.SmUtilizationRemainsBetweenZeroAndOneHundred" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/14 Testing: BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns
+5/14 Test: BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns" start time: Jul 01 15:44 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BenchmarkTests
+[ RUN      ] BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns
+[       OK ] BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns (0 ms)
+[----------] 1 test from BenchmarkTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns" end time: Jul 01 15:44 EDT
+"BenchmarkTests.BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/14 Testing: EngineTests.MemoryInstructionsCauseCorrectStallDuration
+6/14 Test: EngineTests.MemoryInstructionsCauseCorrectStallDuration
 Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=EngineTests.MemoryInstructionsCauseCorrectStallDuration" "--gtest_also_run_disabled_tests"
 Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
-"EngineTests.MemoryInstructionsCauseCorrectStallDuration" start time: Jul 01 15:25 EDT
+"EngineTests.MemoryInstructionsCauseCorrectStallDuration" start time: Jul 01 15:44 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -20,18 +155,18 @@ Note: Google Test filter = EngineTests.MemoryInstructionsCauseCorrectStallDurati
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EngineTests.MemoryInstructionsCauseCorrectStallDuration" end time: Jul 01 15:25 EDT
+"EngineTests.MemoryInstructionsCauseCorrectStallDuration" end time: Jul 01 15:44 EDT
 "EngineTests.MemoryInstructionsCauseCorrectStallDuration" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/7 Testing: EngineTests.SimulationCompletesAllWarps
-2/7 Test: EngineTests.SimulationCompletesAllWarps
+7/14 Testing: EngineTests.SimulationCompletesAllWarps
+7/14 Test: EngineTests.SimulationCompletesAllWarps
 Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=EngineTests.SimulationCompletesAllWarps" "--gtest_also_run_disabled_tests"
 Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
-"EngineTests.SimulationCompletesAllWarps" start time: Jul 01 15:25 EDT
+"EngineTests.SimulationCompletesAllWarps" start time: Jul 01 15:44 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -50,15 +185,15 @@ Note: Google Test filter = EngineTests.SimulationCompletesAllWarps
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EngineTests.SimulationCompletesAllWarps" end time: Jul 01 15:25 EDT
+"EngineTests.SimulationCompletesAllWarps" end time: Jul 01 15:44 EDT
 "EngineTests.SimulationCompletesAllWarps" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/7 Testing: EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions
-3/7 Test: EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions
+8/14 Testing: EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions
+8/14 Test: EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions
 Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" "--gtest_also_run_disabled_tests"
 Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
-"EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" start time: Jul 01 15:25 EDT
+"EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" start time: Jul 01 15:44 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -77,15 +212,15 @@ Note: Google Test filter = EngineTests.InstructionsCompletedNeverExceedsTotalWor
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" end time: Jul 01 15:25 EDT
+"EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" end time: Jul 01 15:44 EDT
 "EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/7 Testing: EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred
-4/7 Test: EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred
+9/14 Testing: EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred
+9/14 Test: EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred
 Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" "--gtest_also_run_disabled_tests"
 Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
-"EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" start time: Jul 01 15:25 EDT
+"EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" start time: Jul 01 15:44 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -104,15 +239,15 @@ Note: Google Test filter = EngineTests.SmUtilizationStaysBetweenZeroAndOneHundre
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" end time: Jul 01 15:25 EDT
+"EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" end time: Jul 01 15:44 EDT
 "EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/7 Testing: SchedulerTests.RoundRobinOrder
-5/7 Test: SchedulerTests.RoundRobinOrder
+10/14 Testing: SchedulerTests.RoundRobinOrder
+10/14 Test: SchedulerTests.RoundRobinOrder
 Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=SchedulerTests.RoundRobinOrder" "--gtest_also_run_disabled_tests"
 Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
-"SchedulerTests.RoundRobinOrder" start time: Jul 01 15:25 EDT
+"SchedulerTests.RoundRobinOrder" start time: Jul 01 15:44 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -131,15 +266,15 @@ Note: Google Test filter = SchedulerTests.RoundRobinOrder
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"SchedulerTests.RoundRobinOrder" end time: Jul 01 15:25 EDT
+"SchedulerTests.RoundRobinOrder" end time: Jul 01 15:44 EDT
 "SchedulerTests.RoundRobinOrder" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/7 Testing: SchedulerTests.StalledWarpsNotScheduled
-6/7 Test: SchedulerTests.StalledWarpsNotScheduled
+11/14 Testing: SchedulerTests.StalledWarpsNotScheduled
+11/14 Test: SchedulerTests.StalledWarpsNotScheduled
 Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=SchedulerTests.StalledWarpsNotScheduled" "--gtest_also_run_disabled_tests"
 Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
-"SchedulerTests.StalledWarpsNotScheduled" start time: Jul 01 15:25 EDT
+"SchedulerTests.StalledWarpsNotScheduled" start time: Jul 01 15:44 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -158,15 +293,15 @@ Note: Google Test filter = SchedulerTests.StalledWarpsNotScheduled
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"SchedulerTests.StalledWarpsNotScheduled" end time: Jul 01 15:25 EDT
+"SchedulerTests.StalledWarpsNotScheduled" end time: Jul 01 15:44 EDT
 "SchedulerTests.StalledWarpsNotScheduled" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/7 Testing: SchedulerTests.CompletedWarpsNotScheduled
-7/7 Test: SchedulerTests.CompletedWarpsNotScheduled
+12/14 Testing: SchedulerTests.CompletedWarpsNotScheduled
+12/14 Test: SchedulerTests.CompletedWarpsNotScheduled
 Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=SchedulerTests.CompletedWarpsNotScheduled" "--gtest_also_run_disabled_tests"
 Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
-"SchedulerTests.CompletedWarpsNotScheduled" start time: Jul 01 15:25 EDT
+"SchedulerTests.CompletedWarpsNotScheduled" start time: Jul 01 15:44 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -185,8 +320,62 @@ Note: Google Test filter = SchedulerTests.CompletedWarpsNotScheduled
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"SchedulerTests.CompletedWarpsNotScheduled" end time: Jul 01 15:25 EDT
+"SchedulerTests.CompletedWarpsNotScheduled" end time: Jul 01 15:44 EDT
 "SchedulerTests.CompletedWarpsNotScheduled" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 01 15:25 EDT
+13/14 Testing: WorkloadTests.SameSeedProducesSameWorkload
+13/14 Test: WorkloadTests.SameSeedProducesSameWorkload
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=WorkloadTests.SameSeedProducesSameWorkload" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"WorkloadTests.SameSeedProducesSameWorkload" start time: Jul 01 15:44 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = WorkloadTests.SameSeedProducesSameWorkload
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WorkloadTests
+[ RUN      ] WorkloadTests.SameSeedProducesSameWorkload
+[       OK ] WorkloadTests.SameSeedProducesSameWorkload (0 ms)
+[----------] 1 test from WorkloadTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"WorkloadTests.SameSeedProducesSameWorkload" end time: Jul 01 15:44 EDT
+"WorkloadTests.SameSeedProducesSameWorkload" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/14 Testing: WorkloadTests.DifferentSeedsProduceDifferentWorkloads
+14/14 Test: WorkloadTests.DifferentSeedsProduceDifferentWorkloads
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=WorkloadTests.DifferentSeedsProduceDifferentWorkloads" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"WorkloadTests.DifferentSeedsProduceDifferentWorkloads" start time: Jul 01 15:44 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = WorkloadTests.DifferentSeedsProduceDifferentWorkloads
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from WorkloadTests
+[ RUN      ] WorkloadTests.DifferentSeedsProduceDifferentWorkloads
+[       OK ] WorkloadTests.DifferentSeedsProduceDifferentWorkloads (0 ms)
+[----------] 1 test from WorkloadTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"WorkloadTests.DifferentSeedsProduceDifferentWorkloads" end time: Jul 01 15:44 EDT
+"WorkloadTests.DifferentSeedsProduceDifferentWorkloads" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 01 15:44 EDT

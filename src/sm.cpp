@@ -34,6 +34,7 @@ bool SM::issue_cycle(std::vector<Warp>& warps,
         warp.mark_running();
     }
     ++metrics.instructions_completed;
+    ++metrics.non_idle_sm_cycles;
     ++metrics.active_sm_cycles;
 
     if (memory_instruction) {

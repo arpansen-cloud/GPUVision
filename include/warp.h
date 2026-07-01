@@ -15,6 +15,9 @@ enum class InstructionType {
 
 struct Instruction {
     InstructionType type;
+
+    bool operator==(const Instruction& other) const;
+    bool operator!=(const Instruction& other) const;
 };
 
 enum class WarpState {
@@ -33,6 +36,7 @@ public:
     WarpState state() const;
     int stall_cycles_remaining() const;
     std::size_t instruction_count() const;
+    const std::vector<Instruction>& instructions() const;
 
     bool is_ready() const;
     bool is_completed() const;

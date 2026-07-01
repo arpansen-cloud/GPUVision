@@ -1,7 +1,38 @@
 {
-  "tests": 7,
+  "tests": 14,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "BenchmarkTests",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "BenchmarkRunsAllSchedulers",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/benchmark_tests.cpp",
+          "line": 27
+        },
+        {
+          "name": "CsvExportCreatesExpectedHeaders",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/benchmark_tests.cpp",
+          "line": 38
+        },
+        {
+          "name": "AverageWarpCompletionTimeIsNonNegative",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/benchmark_tests.cpp",
+          "line": 58
+        },
+        {
+          "name": "SmUtilizationRemainsBetweenZeroAndOneHundred",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/benchmark_tests.cpp",
+          "line": 68
+        },
+        {
+          "name": "BenchmarkDoesNotMutateBaseWorkloadAcrossSchedulerRuns",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/benchmark_tests.cpp",
+          "line": 79
+        }
+      ]
+    },
     {
       "name": "EngineTests",
       "tests": 4,
@@ -46,6 +77,22 @@
           "name": "CompletedWarpsNotScheduled",
           "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/scheduler_tests.cpp",
           "line": 46
+        }
+      ]
+    },
+    {
+      "name": "WorkloadTests",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "SameSeedProducesSameWorkload",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/workload_tests.cpp",
+          "line": 5
+        },
+        {
+          "name": "DifferentSeedsProduceDifferentWorkloads",
+          "file": "\/Users\/arpansen\/Documents\/GPU Scheduling Simulator\/untitled\/GPUVision\/tests\/workload_tests.cpp",
+          "line": 14
         }
       ]
     }

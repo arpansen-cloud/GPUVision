@@ -16,7 +16,8 @@ double Metrics::sm_utilization_percent() const {
     if (total_sm_cycles == 0) {
         return 0.0;
     }
-    return 100.0 * static_cast<double>(active_sm_cycles) / static_cast<double>(total_sm_cycles);
+    return 100.0 * static_cast<double>(non_idle_sm_cycles) /
+           static_cast<double>(total_sm_cycles);
 }
 
 std::ostream& operator<<(std::ostream& os, const Metrics& metrics) {
@@ -29,6 +30,12 @@ std::ostream& operator<<(std::ostream& os, const Metrics& metrics) {
     os << "  Idle cycles: " << metrics.idle_cycles << '\n';
     os << "  Memory stall count: " << metrics.memory_stall_count << '\n';
     os << "  Completed warps: " << metrics.completed_warps << '\n';
+    os << "  Average warp completion time: " << std::fixed << std::setprecision(2)
+       << metrics.average_warp_completion_time << '\n';
+    os << "  Max warp completion time: " << metrics.max_warp_completion_time << '\n';
+    os << "  Min warp completion time: " << metrics.min_warp_completion_time << '\n';
+    os << "  Total SM cycles: " << metrics.total_sm_cycles << '\n';
+    os << "  Non-idle SM cycles: " << metrics.non_idle_sm_cycles << '\n';
     return os;
 }
 

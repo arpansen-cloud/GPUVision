@@ -5,6 +5,14 @@
 
 namespace gpuvision {
 
+bool Instruction::operator==(const Instruction& other) const {
+    return type == other.type;
+}
+
+bool Instruction::operator!=(const Instruction& other) const {
+    return !(*this == other);
+}
+
 Warp::Warp(int id, std::vector<Instruction> instructions)
     : id_(id),
       program_counter_(0),
@@ -30,6 +38,10 @@ int Warp::stall_cycles_remaining() const {
 
 std::size_t Warp::instruction_count() const {
     return instructions_.size();
+}
+
+const std::vector<Instruction>& Warp::instructions() const {
+    return instructions_;
 }
 
 bool Warp::is_ready() const {

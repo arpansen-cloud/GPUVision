@@ -262,6 +262,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/benchmark.o: src/benchmark.cpp.o
+.PHONY : src/benchmark.o
+
+# target to build an object file
+src/benchmark.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/benchmark.cpp.o
+.PHONY : src/benchmark.cpp.o
+
+src/benchmark.i: src/benchmark.cpp.i
+.PHONY : src/benchmark.i
+
+# target to preprocess a source file
+src/benchmark.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/benchmark.cpp.i
+.PHONY : src/benchmark.cpp.i
+
+src/benchmark.s: src/benchmark.cpp.s
+.PHONY : src/benchmark.s
+
+# target to generate assembly for a file
+src/benchmark.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/benchmark.cpp.s
+.PHONY : src/benchmark.cpp.s
+
 src/engine.o: src/engine.cpp.o
 .PHONY : src/engine.o
 
@@ -406,6 +430,54 @@ src/warp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/warp.cpp.s
 .PHONY : src/warp.cpp.s
 
+src/workload.o: src/workload.cpp.o
+.PHONY : src/workload.o
+
+# target to build an object file
+src/workload.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/workload.cpp.o
+.PHONY : src/workload.cpp.o
+
+src/workload.i: src/workload.cpp.i
+.PHONY : src/workload.i
+
+# target to preprocess a source file
+src/workload.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/workload.cpp.i
+.PHONY : src/workload.cpp.i
+
+src/workload.s: src/workload.cpp.s
+.PHONY : src/workload.s
+
+# target to generate assembly for a file
+src/workload.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_core.dir/build.make CMakeFiles/gpuvision_core.dir/src/workload.cpp.s
+.PHONY : src/workload.cpp.s
+
+tests/benchmark_tests.o: tests/benchmark_tests.cpp.o
+.PHONY : tests/benchmark_tests.o
+
+# target to build an object file
+tests/benchmark_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.o
+.PHONY : tests/benchmark_tests.cpp.o
+
+tests/benchmark_tests.i: tests/benchmark_tests.cpp.i
+.PHONY : tests/benchmark_tests.i
+
+# target to preprocess a source file
+tests/benchmark_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.i
+.PHONY : tests/benchmark_tests.cpp.i
+
+tests/benchmark_tests.s: tests/benchmark_tests.cpp.s
+.PHONY : tests/benchmark_tests.s
+
+# target to generate assembly for a file
+tests/benchmark_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/benchmark_tests.cpp.s
+.PHONY : tests/benchmark_tests.cpp.s
+
 tests/engine_tests.o: tests/engine_tests.cpp.o
 .PHONY : tests/engine_tests.o
 
@@ -454,6 +526,30 @@ tests/scheduler_tests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.s
 .PHONY : tests/scheduler_tests.cpp.s
 
+tests/workload_tests.o: tests/workload_tests.cpp.o
+.PHONY : tests/workload_tests.o
+
+# target to build an object file
+tests/workload_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.o
+.PHONY : tests/workload_tests.cpp.o
+
+tests/workload_tests.i: tests/workload_tests.cpp.i
+.PHONY : tests/workload_tests.i
+
+# target to preprocess a source file
+tests/workload_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.i
+.PHONY : tests/workload_tests.cpp.i
+
+tests/workload_tests.s: tests/workload_tests.cpp.s
+.PHONY : tests/workload_tests.s
+
+# target to generate assembly for a file
+tests/workload_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpuvision_tests.dir/build.make CMakeFiles/gpuvision_tests.dir/tests/workload_tests.cpp.s
+.PHONY : tests/workload_tests.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -474,6 +570,9 @@ help:
 	@echo "... gpuvision_tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... src/benchmark.o"
+	@echo "... src/benchmark.i"
+	@echo "... src/benchmark.s"
 	@echo "... src/engine.o"
 	@echo "... src/engine.i"
 	@echo "... src/engine.s"
@@ -492,12 +591,21 @@ help:
 	@echo "... src/warp.o"
 	@echo "... src/warp.i"
 	@echo "... src/warp.s"
+	@echo "... src/workload.o"
+	@echo "... src/workload.i"
+	@echo "... src/workload.s"
+	@echo "... tests/benchmark_tests.o"
+	@echo "... tests/benchmark_tests.i"
+	@echo "... tests/benchmark_tests.s"
 	@echo "... tests/engine_tests.o"
 	@echo "... tests/engine_tests.i"
 	@echo "... tests/engine_tests.s"
 	@echo "... tests/scheduler_tests.o"
 	@echo "... tests/scheduler_tests.i"
 	@echo "... tests/scheduler_tests.s"
+	@echo "... tests/workload_tests.o"
+	@echo "... tests/workload_tests.i"
+	@echo "... tests/workload_tests.s"
 .PHONY : help
 
 

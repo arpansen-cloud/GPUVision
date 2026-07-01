@@ -30,11 +30,14 @@ private:
     bool all_warps_completed() const;
     void tick_stalled_warps(std::ostream* log);
     void update_completed_warps_metric();
+    void record_newly_completed_warps(int completion_cycle);
+    void update_completion_time_metrics();
 
     EngineConfig config_;
     std::vector<Warp> warps_;
     std::vector<SM> sms_;
     Metrics metrics_;
+    std::vector<int> warp_completion_times_;
 };
 
 } // namespace gpuvision
