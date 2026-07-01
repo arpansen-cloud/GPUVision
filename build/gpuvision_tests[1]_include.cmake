@@ -1,0 +1,5 @@
+if(EXISTS "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests[1]_tests.cmake")
+  include("/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests[1]_tests.cmake")
+else()
+  add_test(gpuvision_tests_NOT_BUILT gpuvision_tests_NOT_BUILT)
+endif()

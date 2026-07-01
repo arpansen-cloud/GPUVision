@@ -1,0 +1,192 @@
+Start testing: Jul 01 15:25 EDT
+----------------------------------------------------------
+1/7 Testing: EngineTests.MemoryInstructionsCauseCorrectStallDuration
+1/7 Test: EngineTests.MemoryInstructionsCauseCorrectStallDuration
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=EngineTests.MemoryInstructionsCauseCorrectStallDuration" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"EngineTests.MemoryInstructionsCauseCorrectStallDuration" start time: Jul 01 15:25 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EngineTests.MemoryInstructionsCauseCorrectStallDuration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EngineTests
+[ RUN      ] EngineTests.MemoryInstructionsCauseCorrectStallDuration
+[       OK ] EngineTests.MemoryInstructionsCauseCorrectStallDuration (0 ms)
+[----------] 1 test from EngineTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"EngineTests.MemoryInstructionsCauseCorrectStallDuration" end time: Jul 01 15:25 EDT
+"EngineTests.MemoryInstructionsCauseCorrectStallDuration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/7 Testing: EngineTests.SimulationCompletesAllWarps
+2/7 Test: EngineTests.SimulationCompletesAllWarps
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=EngineTests.SimulationCompletesAllWarps" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"EngineTests.SimulationCompletesAllWarps" start time: Jul 01 15:25 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EngineTests.SimulationCompletesAllWarps
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EngineTests
+[ RUN      ] EngineTests.SimulationCompletesAllWarps
+[       OK ] EngineTests.SimulationCompletesAllWarps (0 ms)
+[----------] 1 test from EngineTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EngineTests.SimulationCompletesAllWarps" end time: Jul 01 15:25 EDT
+"EngineTests.SimulationCompletesAllWarps" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/7 Testing: EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions
+3/7 Test: EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" start time: Jul 01 15:25 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EngineTests
+[ RUN      ] EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions
+[       OK ] EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions (0 ms)
+[----------] 1 test from EngineTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" end time: Jul 01 15:25 EDT
+"EngineTests.InstructionsCompletedNeverExceedsTotalWorkloadInstructions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/7 Testing: EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred
+4/7 Test: EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" start time: Jul 01 15:25 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EngineTests
+[ RUN      ] EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred
+[       OK ] EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred (0 ms)
+[----------] 1 test from EngineTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" end time: Jul 01 15:25 EDT
+"EngineTests.SmUtilizationStaysBetweenZeroAndOneHundred" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/7 Testing: SchedulerTests.RoundRobinOrder
+5/7 Test: SchedulerTests.RoundRobinOrder
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=SchedulerTests.RoundRobinOrder" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"SchedulerTests.RoundRobinOrder" start time: Jul 01 15:25 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SchedulerTests.RoundRobinOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SchedulerTests
+[ RUN      ] SchedulerTests.RoundRobinOrder
+[       OK ] SchedulerTests.RoundRobinOrder (0 ms)
+[----------] 1 test from SchedulerTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SchedulerTests.RoundRobinOrder" end time: Jul 01 15:25 EDT
+"SchedulerTests.RoundRobinOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/7 Testing: SchedulerTests.StalledWarpsNotScheduled
+6/7 Test: SchedulerTests.StalledWarpsNotScheduled
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=SchedulerTests.StalledWarpsNotScheduled" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"SchedulerTests.StalledWarpsNotScheduled" start time: Jul 01 15:25 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SchedulerTests.StalledWarpsNotScheduled
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SchedulerTests
+[ RUN      ] SchedulerTests.StalledWarpsNotScheduled
+[       OK ] SchedulerTests.StalledWarpsNotScheduled (0 ms)
+[----------] 1 test from SchedulerTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SchedulerTests.StalledWarpsNotScheduled" end time: Jul 01 15:25 EDT
+"SchedulerTests.StalledWarpsNotScheduled" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/7 Testing: SchedulerTests.CompletedWarpsNotScheduled
+7/7 Test: SchedulerTests.CompletedWarpsNotScheduled
+Command: "/Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/gpuvision_tests" "--gtest_filter=SchedulerTests.CompletedWarpsNotScheduled" "--gtest_also_run_disabled_tests"
+Directory: /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build
+"SchedulerTests.CompletedWarpsNotScheduled" start time: Jul 01 15:25 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/arpansen/Documents/GPU Scheduling Simulator/untitled/GPUVision/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SchedulerTests.CompletedWarpsNotScheduled
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SchedulerTests
+[ RUN      ] SchedulerTests.CompletedWarpsNotScheduled
+[       OK ] SchedulerTests.CompletedWarpsNotScheduled (0 ms)
+[----------] 1 test from SchedulerTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SchedulerTests.CompletedWarpsNotScheduled" end time: Jul 01 15:25 EDT
+"SchedulerTests.CompletedWarpsNotScheduled" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 01 15:25 EDT

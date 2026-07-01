@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/gpuvision_tests.dir/tests/engine_tests.cpp.o CMakeFiles/gpuvision_tests.dir/tests/scheduler_tests.cpp.o -o gpuvision_tests  libgpuvision_core.a lib/libgtest_main.a lib/libgtest.a
