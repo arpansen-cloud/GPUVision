@@ -1,0 +1,250 @@
+{
+  "mode": "demo",
+  "scheduler": "Round Robin",
+  "config": {
+    "sms": 2,
+    "warps": 4,
+    "instructions_per_warp": 4,
+    "memory_latency": 3
+  },
+  "total_cycles": 8,
+  "final_metrics": {
+    "total_cycles": 8,
+    "instructions_completed": 14,
+    "ipc": 1.75,
+    "sm_utilization": 87.5,
+    "idle_cycles": 2,
+    "memory_stalls": 4,
+    "completed_warps": 4,
+    "average_warp_completion_time": 6.25,
+    "max_warp_completion_time": 8,
+    "min_warp_completion_time": 5,
+    "total_sm_cycles": 16,
+    "non_idle_sm_cycles": 14
+  },
+  "timeline": [
+    {
+      "cycle": 0,
+      "sms": [
+        {
+          "sm_id": 0,
+          "warp_id": 0,
+          "instruction": "COMPUTE",
+          "resulting_state": "RUNNING",
+          "idle": false
+        },
+        {
+          "sm_id": 1,
+          "warp_id": 1,
+          "instruction": "MEMORY",
+          "resulting_state": "STALLED",
+          "idle": false
+        }
+      ],
+      "memory_stalls": [],
+      "completed_warps": [],
+      "warp_states": [
+        {
+          "warp_id": 0,
+          "program_counter": 1,
+          "state": "READY",
+          "stall_cycles_remaining": 0
+        },
+        {
+          "warp_id": 1,
+          "program_counter": 1,
+          "state": "STALLED",
+          "stall_cycles_remaining": 3
+        },
+        {
+          "warp_id": 2,
+          "program_counter": 0,
+          "state": "READY",
+          "stall_cycles_remaining": 0
+        },
+        {
+          "warp_id": 3,
+          "program_counter": 0,
+          "state": "READY",
+          "stall_cycles_remaining": 0
+        }
+      ]
+    },
+    {
+      "cycle": 1,
+      "sms": [
+        {
+          "sm_id": 0,
+          "warp_id": 2,
+          "instruction": "COMPUTE",
+          "resulting_state": "RUNNING",
+          "idle": false
+        },
+        {
+          "sm_id": 1,
+          "warp_id": 3,
+          "instruction": "MEMORY",
+          "resulting_state": "STALLED",
+          "idle": false
+        }
+      ],
+      "memory_stalls": [
+        {
+          "warp_id": 1,
+          "before": 3,
+          "after": 2
+        }
+      ],
+      "completed_warps": [],
+      "warp_states": [
+        {
+          "warp_id": 0,
+          "program_counter": 1,
+          "state": "READY",
+          "stall_cycles_remaining": 0
+        },
+        {
+          "warp_id": 1,
+          "program_counter": 1,
+          "state": "STALLED",
+          "stall_cycles_remaining": 2
+        },
+        {
+          "warp_id": 2,
+          "program_counter": 1,
+          "state": "READY",
+          "stall_cycles_remaining": 0
+        },
+        {
+          "warp_id": 3,
+          "program_counter": 1,
+          "state": "STALLED",
+          "stall_cycles_remaining": 3
+        }
+      ]
+    },
+    {
+      "cycle": 2,
+      "sms": [
+        {
+          "sm_id": 0,
+          "warp_id": 0,
+          "instruction": "MEMORY",
+          "resulting_state": "STALLED",
+          "idle": false
+        },
+        {
+          "sm_id": 1,
+          "warp_id": 2,
+          "instruction": "COMPUTE",
+          "resulting_state": "RUNNING",
+          "idle": false
+        }
+      ],
+      "memory_stalls": [
+        {
+          "warp_id": 1,
+          "before": 2,
+          "after": 1
+        },
+        {
+          "warp_id": 3,
+          "before": 3,
+          "after": 2
+        }
+      ],
+      "completed_warps": [],
+      "warp_states": [
+        {
+          "warp_id": 0,
+          "program_counter": 2,
+          "state": "STALLED",
+          "stall_cycles_remaining": 3
+        },
+        {
+          "warp_id": 1,
+          "program_counter": 1,
+          "state": "STALLED",
+          "stall_cycles_remaining": 1
+        },
+        {
+          "warp_id": 2,
+          "program_counter": 2,
+          "state": "READY",
+          "stall_cycles_remaining": 0
+        },
+        {
+          "warp_id": 3,
+          "program_counter": 1,
+          "state": "STALLED",
+          "stall_cycles_remaining": 2
+        }
+      ]
+    },
+    {
+      "cycle": 3,
+      "sms": [
+        {
+          "sm_id": 0,
+          "warp_id": 1,
+          "instruction": "COMPUTE",
+          "resulting_state": "COMPLETED",
+          "idle": false
+        },
+        {
+          "sm_id": 1,
+          "warp_id": 2,
+          "instruction": "MEMORY",
+          "resulting_state": "STALLED",
+          "idle": false
+        }
+      ],
+      "memory_stalls": [
+        {
+          "warp_id": 0,
+          "before": 3,
+          "after": 2
+        },
+        {
+          "warp_id": 1,
+          "before": 1,
+          "after": 0
+        },
+        {
+          "warp_id": 3,
+          "before": 2,
+          "after": 1
+        }
+      ],
+      "completed_warps": [
+        1
+      ],
+      "warp_states": [
+        {
+          "warp_id": 0,
+          "program_counter": 2,
+          "state": "STALLED",
+          "stall_cycles_remaining": 2
+        },
+        {
+          "warp_id": 1,
+          "program_counter": 2,
+          "state": "COMPLETED",
+          "stall_cycles_remaining": 0
+        },
+        {
+          "warp_id": 2,
+          "program_counter": 3,
+          "state": "STALLED",
+          "stall_cycles_remaining": 3
+        },
+        {
+          "warp_id": 3,
+          "program_counter": 1,
+          "state": "STALLED",
+          "stall_cycles_remaining": 1
+        }
+      ]
+    }
+  ]
+}
